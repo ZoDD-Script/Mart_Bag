@@ -1,0 +1,20 @@
+extends baseEmail
+
+block content
+  p Hi #{firstName},
+  p This is a friendly reminder from the Mart_Bag
+  p One of your saved list is due for purchase, please do well to purchase the items on your list.
+  p You can also visit the app to look for shops near you where you could get the items on the list.
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  //- a(href=`${url}`, target='_blank') verify your email
+  //- p If you didn't forget your password, please ignore this email!
+                  //- a(href=`${url}`, target='_blank') Upload user photo
+  //- p If you need any help with booking your next tour, please don't hesitate to contact me!
+  //- p - Jonas Schmedtmann, CEO
